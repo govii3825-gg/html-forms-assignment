@@ -1,0 +1,110 @@
+#registration form#
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+</head>
+<body>
+
+    <h1>User Registration</h1>
+
+    <nav>
+        <a href="index.html">Home</a> |
+        <a href="register.html">Registration</a> |
+        <a href="login.html">Login</a>
+    </nav>
+
+    <hr>
+
+    <form action="#" method="post">
+
+        <!-- Text Input -->
+        <label for="fullname">Full Name:</label><br>
+        <input type="text" id="fullname" name="fullname"
+               placeholder="Enter your full name" required>
+        <br><br>
+
+        <!-- Email -->
+        <label for="email">Email Address:</label><br>
+        <input type="email" id="email" name="email"
+               placeholder="Enter your email" required>
+        <br><br>
+
+        <!-- Telephone -->
+        <label for="phone">Telephone Number:</label><br>
+        <input type="tel" id="phone" name="phone"
+               placeholder="Enter your phone number" required>
+        <br><br>
+
+        <!-- Date -->
+        <label for="dob">Date of Birth:</label><br>
+        <input type="date" id="dob" name="dob" required>
+        <br><br>
+
+        <!-- Radio Buttons -->
+        <label>Gender:</label><br>
+
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label>
+
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label>
+
+        <input type="radio" id="other" name="gender" value="other">
+        <label for="other">Other</label>
+
+        <br><br>
+
+        <!-- Dropdown List -->
+        <label for="country">Country:</label><br>
+        <select id="country" name="country">
+            <option value="">-- Select Country --</option>
+            <option value="india">India</option>
+            <option value="uae">UAE</option>
+            <option value="kuwait">Kuwait</option>
+            <option value="qatar">Qatar</option>
+            <option value="other">Other</option>
+        </select>
+
+        <br><br>
+
+        <!-- Checkboxes -->
+        <label>Interests:</label><br>
+
+        <input type="checkbox" id="sports" name="interests" value="sports">
+        <label for="sports">Sports</label><br>
+
+        <input type="checkbox" id="music" name="interests" value="music">
+        <label for="music">Music</label><br>
+
+        <input type="checkbox" id="movies" name="interests" value="movies">
+        <label for="movies">Movies</label><br>
+
+        <input type="checkbox" id="reading" name="interests" value="reading">
+        <label for="reading">Reading</label>
+
+        <br><br>
+
+        <!-- Password -->
+        <label for="password">Create Password:</label><br>
+        <input type="password" id="password" name="password"
+               placeholder="Enter your password" required>
+
+        <br><br>
+
+        <!-- Buttons -->
+        <input type="reset" value="Reset Form">
+        <input type="submit" value="Register">
+
+    </form>
+
+    <br>
+
+    <p>Already have an account?
+        <a href="login.html">Login here</a>
+    </p>
+
+</body>
+</html>
